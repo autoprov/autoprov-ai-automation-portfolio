@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoProv — AI automation team building customer support, lead management, CRM and business process automation systems.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>AutoProv — AI Automation Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#top"><img src="autoprov-logo.png" alt="AutoProv logo"><span>AutoProv</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#services">Capabilities</a>
+      <a href="#team">Team</a>
+      <a href="#process">Process</a>
+      <a class="nav-cta" href="#contact">Let's talk ↗</a>
+    </nav>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="eyebrow"><span class="pulse"></span> AI AUTOMATION • N8N • BUSINESS SYSTEMS</div>
+      <h1>We build AI systems that<br><em>move business forward.</em></h1>
+      <p class="hero-copy">AutoProv is a specialized AI automation team helping businesses turn repetitive conversations, lead handling, data entry, and operations into reliable automated workflows.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">Explore our work ↓</a>
+        <a class="btn btn-ghost" href="#contact">Start a project ↗</a>
+      </div>
+      <div class="hero-grid">
+        <div><strong>04</strong><span>Featured systems</span></div>
+        <div><strong>AI</strong><span>Decision & extraction</span></div>
+        <div><strong>n8n</strong><span>Workflow orchestration</span></div>
+        <div><strong>API</strong><span>Business integrations</span></div>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <div class="section-head">
+        <div class="eyebrow">SELECTED WORK</div>
+        <h2>Automation systems built around real workflows.</h2>
+        <p>Portfolio builds demonstrating how AI, workflow automation, APIs, messaging, CRM, and business data can work together.</p>
+      </div>
+
+      <div class="work-list">
+        <article class="project project-dark">
+          <div class="project-visual inbox-visual portfolio-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active">
+                <div class="visual-top"><span>AI BUSINESS INBOX</span><span class="status">LIVE SYSTEM</span></div>
+                <div class="inbox-card hot"><span class="dot"></span><div><b>New lead detected</b><small>Intent: Sales inquiry</small></div><strong>HOT</strong></div>
+                <div class="inbox-card"><span class="dot"></span><div><b>Customer support</b><small>Order status request</small></div><strong>SUPPORT</strong></div>
+                <div class="inbox-card"><span class="dot"></span><div><b>Booking request</b><small>Appointment inquiry</small></div><strong>ACTION</strong></div>
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-workflow.png" alt="Actual AI Business Inbox n8n workflow overview" loading="lazy">
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-duplicate-protection.png" alt="Actual Duplicate Message Check configuration in n8n" loading="lazy">
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-ai-agent.png" alt="Actual AutoProv AI Support Agent and Lead Capture workflow" loading="lazy">
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-messenger-result.png" alt="Actual Messenger customer support response" loading="lazy">
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project image">→</button>
+            <div class="carousel-counter" aria-live="polite">1 / 5</div>
+          </div>
+          <div class="project-info">
+            <span class="tag">01 / CUSTOMER OPERATIONS</span>
+            <h3>AI Business Inbox</h3>
+            <p>Turns scattered incoming business messages into structured, prioritized, actionable conversations.</p>
+            <div class="chips"><span>Intent Detection</span><span>Priority Routing</span><span>Lead Capture</span><span>Duplicate Protection</span><span>Human Handoff</span></div>
+            <button class="case-btn" data-modal="inbox">View case study <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project project-light">
+          <div class="project-visual messenger-visual portfolio-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active">
+                <div class="phone">
+                  <div class="phone-head"><span>●</span> Business Messenger <small>online</small></div>
+                  <div class="bubble user">I'd like to book an appointment.</div>
+                  <div class="bubble ai">Absolutely. What date works for you?</div>
+                  <div class="bubble user">Tomorrow afternoon.</div>
+                  <div class="bubble ai">I can help with that. Let me capture your details first.</div>
+                  <div class="typing">● ● ●</div>
+                </div>
+              </div>
+
+              <div class="carousel-slide"><img src="messenger-01-workflow.png" alt="Actual AutoProv Facebook Messenger automation workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-02-ai-agent.png" alt="Actual AutoProv AI Support Agent workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-03-business-knowledge.png" alt="Actual Business Knowledge configuration" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-04-intent-detection.png" alt="Actual Intent Detection node" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-05-lead-capture.png" alt="Actual Lead Capture and Google Sheets logging workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-06-lead-log.png" alt="Actual Lead Log Google Sheets result" loading="lazy"></div>
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project image">→</button>
+            <div class="carousel-counter" aria-live="polite">1 / 7</div>
+          </div>
+          <div class="project-info">
+            <span class="tag">02 / CUSTOMER EXPERIENCE</span>
+            <h3>24/7 AI Messenger Agent</h3>
+            <p>An AI support agent for Facebook Messenger that understands intent, captures leads, and responds naturally.</p>
+            <div class="chips"><span>Meta Messenger</span><span>AI Agent</span><span>Intent Detection</span><span>Lead Capture</span><span>Business Knowledge</span></div>
+            <button class="case-btn" data-modal="messenger">View case study <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project project-accent">
+          <div class="project-visual receipt-visual portfolio-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active">
+                <div class="receipt"><div class="receipt-brand">MOTOPLUS</div><div class="receipt-line">RACING PLUG W/ CAP FAITO <b>×5</b></div><div class="receipt-line">CHAIN LUBE <b>×3</b></div><div class="receipt-line">BRAKE PAD <b>×2</b></div><hr><div class="receipt-total">AI EXTRACTED ✓</div></div>
+                <div class="flow-arrow">→</div>
+                <div class="stock-card"><span>INVENTORY</span><strong>20 → 25</strong><small>Stock updated ✓</small></div>
+              </div>
+
+              <div class="carousel-slide"><img src="receipt-01-workflow.jpg" alt="Actual Receipt to Inventory n8n workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="receipt-02-extraction.jpg" alt="Actual receipt extraction and AI processing result" loading="lazy"></div>
+              <div class="carousel-slide"><img src="receipt-03-inventory-update.jpg" alt="Actual Loyverse inventory item list" loading="lazy"></div>
+              <div class="carousel-slide"><img src="receipt-04-inventory-audit.jpg" alt="Actual Receipt Items and inventory audit data in Google Sheets" loading="lazy"></div>
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project image">→</button>
+            <div class="carousel-counter" aria-live="polite">1 / 5</div>
+          </div>
+          <div class="project-info">
+            <span class="tag">03 / OPERATIONS AUTOMATION</span>
+            <h3>Receipt → Inventory Automation</h3>
+            <p>Extracts receipt data with AI, matches products, updates inventory, and creates an auditable stock movement record.</p>
+            <div class="chips"><span>OCR</span><span>OpenAI</span><span>Loyverse API</span><span>Product Matching</span><span>Audit Log</span></div>
+            <button class="case-btn" data-modal="inventory">View case study <span>↗</span></button>
+          </div>
+        </article>
+
+        
+      </div>
+    </section>
+
+    <section id="services" class="section capabilities">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">CAPABILITIES</div>
+          <h2>From messy inputs to reliable workflows.</h2>
+          <p>We don't just connect apps. We design the logic between them.</p>
+        </div>
+        <div class="cap-grid">
+          <div class="cap"><span>✦</span><h3>AI & LLM Workflows</h3><p>Structured extraction, classification, intent detection, lead qualification, and AI-assisted responses.</p></div>
+          <div class="cap"><span>↯</span><h3>n8n Automation</h3><p>Multi-step workflows with validation, branching, duplicate protection, error handling, and logging.</p></div>
+          <div class="cap"><span>⌁</span><h3>API Integrations</h3><p>Connect messaging, CRM, inventory, spreadsheets, and business platforms through APIs and webhooks.</p></div>
+          <div class="cap"><span>◎</span><h3>Human-in-the-loop</h3><p>Route uncertain or sensitive cases to people instead of forcing automation where judgment is needed.</p></div>
+          <div class="cap"><span>▣</span><h3>Data & Audit Trails</h3><p>Capture structured records, statuses, timestamps, and operational history for visibility.</p></div>
+          <div class="cap"><span>↗</span><h3>Business Process Design</h3><p>Translate repetitive tasks into clear triggers, decisions, actions, and measurable steps.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section container">
+      <div class="team-wrap">
+        <div class="section-head">
+          <div class="eyebrow">THE AUTOPROV TEAM</div>
+          <h2>A small team built for practical automation.</h2>
+          <p>We combine client-facing coordination with hands-on AI automation and workflow engineering.</p>
+        </div>
+        <div class="team-grid">
+  <div class="person">
+    <img class="person-photo" src="bea-profile.png" alt="Beatriz — Client and Operations Lead">
+    <div>
+      <span class="role">CLIENT & OPERATIONS LEAD</span>
+      <h3>Beatriz</h3>
+      <p>Client communication, requirements gathering, project coordination, and account management.</p>
+    </div>
+  </div>
+
+  <div class="person">
+    <img class="person-photo" src="fritz-profile.png" alt="Fritz — AI Automation Engineer">
+    <div>
+      <span class="role">AI AUTOMATION ENGINEER</span>
+      <h3>Fritz</h3>
+      <p>Designs and builds AI-powered automation systems using n8n, AI agents, APIs, webhooks, CRM integrations, workflow logic, testing, and deployment.</p>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="team-note"><span>01</span><p>One team. One workflow from business problem to deployed automation.</p></div>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">HOW WE BUILD</div>
+          <h2>A practical automation process.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="step"><span>01</span><h3>Understand</h3><p>Map the current process, inputs, bottlenecks, rules, and desired outcome.</p></div>
+          <div class="step"><span>02</span><h3>Design</h3><p>Define workflow architecture, data structure, AI decisions, integrations, and fallback paths.</p></div>
+          <div class="step"><span>03</span><h3>Build</h3><p>Implement in n8n with APIs, AI nodes, validation, branching, and logging.</p></div>
+          <div class="step"><span>04</span><h3>Test & refine</h3><p>Test edge cases, duplicate inputs, failures, low-confidence results, and real-world scenarios.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="contact-card">
+        <div>
+          <div class="eyebrow">LET'S BUILD</div>
+          <h2>Have a repetitive process?<br><em>Let's turn it into a system.</em></h2>
+          <p>Open to AI automation, workflow design, integrations, and customer-support automation projects.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:hello@autoprov.dev?subject=Automation%20Project%20Inquiry">Start a conversation ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><span>© 2026 AutoProv</span><span>AI Automation Team • Built with HTML, CSS, JS & n8n</span></footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
