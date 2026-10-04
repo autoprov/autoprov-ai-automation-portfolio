@@ -452,44 +452,54 @@ function getAutoProvResponse(question) {
   // =========================================
 
   return `
-    <strong>That sounds like a process we can explore for
-    automation.</strong>
+  <strong>That's an interesting automation use case.</strong>
 
-    <br><br>
+  <br><br>
 
-    A possible starting architecture could be:
+  I don't want to assume the exact workflow without understanding
+  how your current process works.
 
-    <div class="flow-preview">
-      <span>Trigger</span>
-      <b>→</b>
-      <span>AI / Logic</span>
-      <b>→</b>
-      <span>Data Processing</span>
-      <b>→</b>
-      <span>Action</span>
-      <b>→</b>
-      <span>Notification / Output</span>
-    </div>
+  <br><br>
 
-    <br>
+  We can explore the process, identify the repetitive steps, and
+  determine where AI, integrations, or workflow automation could help.
 
-    The actual workflow would depend on your current process,
-    tools, business rules, and the result you want to achieve.
+  <br><br>
 
-    <br><br>
+  <strong>Possible starting point:</strong>
 
-    <strong>Let's talk</strong> and dive deeper into the problem
-    you want to automate.
+  <div class="flow-preview">
+    <span>Your Current Process</span>
+    <b>→</b>
+    <span>Automation Analysis</span>
+    <b>→</b>
+    <span>AI / Workflow Logic</span>
+    <b>→</b>
+    <span>Integrations</span>
+    <b>→</b>
+    <span>Automated Output</span>
+  </div>
 
-    <br><br>
+  <br>
 
-    <a
-      class="ask-cta"
-      href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
-    >
-      Let's Talk →
-    </a>
-  `;
+  Once we understand the actual process, we can determine what
+  should be automated, what systems need to be connected, and
+  where human involvement should remain.
+
+  <br><br>
+
+  <strong>Let's talk</strong> and dive deeper into the problem
+  you want to automate.
+
+  <br><br>
+
+  <a
+    class="ask-cta"
+    href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+  >
+    Let's Talk →
+  </a>
+`;
 }
 
 function askAutoProv(question) {
