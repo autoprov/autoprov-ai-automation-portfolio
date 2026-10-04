@@ -95,3 +95,316 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); }
 document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => {
   if(window.innerWidth <= 800) document.querySelector('.nav nav').style.display='';
 }));
+
+// =========================================
+// AutoProv Interactive Q&A
+// =========================================
+
+const askInput = document.getElementById("askInput");
+const askButton = document.getElementById("askButton");
+const autoProvChat = document.getElementById("autoProvChat");
+const promptButtons = document.querySelectorAll(".prompt-btn");
+
+function addChatMessage(type, content) {
+  const message = document.createElement("div");
+
+  message.className = `chat-message ${type}`;
+
+  message.innerHTML = `
+    <div class="chat-label mono">
+      ${type === "user" ? "YOU" : "AUTOPROV"}
+    </div>
+
+    <p>${content}</p>
+  `;
+
+  autoProvChat.appendChild(message);
+
+  autoProvChat.scrollTop = autoProvChat.scrollHeight;
+}
+
+
+function getAutoProvResponse(question) {
+
+  const q = question.toLowerCase();
+
+
+  // =========================================
+  // DENTAL / AI VIRTUAL ASSISTANT
+  // =========================================
+
+  if (
+    q.includes("dental") ||
+    q.includes("dentist") ||
+    (q.includes("virtual assistant") && q.includes("lead"))
+  ) {
+
+    return `
+      <strong>Yes.</strong> We could design an AI virtual assistant
+      and lead-logging workflow for a dental clinic.
+
+      <br><br>
+
+      <strong>Possible automation flow:</strong>
+
+      <div class="flow-preview">
+        <span>Patient</span>
+        <b>→</b>
+        <span>Messenger / Website</span>
+        <b>→</b>
+        <span>AI Assistant</span>
+        <b>→</b>
+        <span>Intent Detection</span>
+        <b>→</b>
+        <span>Lead Qualification</span>
+        <b>→</b>
+        <span>Lead Logger</span>
+        <b>→</b>
+        <span>Staff Notification</span>
+      </div>
+
+      <br>
+
+      The assistant could answer common questions, identify
+      appointment intent, collect patient details, qualify leads,
+      and automatically log the information for follow-up.
+
+      <br><br>
+
+      <strong>Let's talk</strong> and dive deeper into the problem
+      you want to automate.
+
+      <br><br>
+
+      <a
+        class="ask-cta"
+        href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+      >
+        Let's Talk →
+      </a>
+    `;
+  }
+
+
+  // =========================================
+  // MESSENGER / LEAD CAPTURE
+  // =========================================
+
+  if (
+    q.includes("messenger") ||
+    q.includes("facebook") ||
+    q.includes("lead capture") ||
+    q.includes("lead")
+  ) {
+
+    return `
+      <strong>Yes.</strong> We could build an automated lead
+      capture system that handles incoming Messenger conversations
+      and turns qualified inquiries into structured leads.
+
+      <br><br>
+
+      <strong>Possible automation flow:</strong>
+
+      <div class="flow-preview">
+        <span>Customer Message</span>
+        <b>→</b>
+        <span>Messenger</span>
+        <b>→</b>
+        <span>AI Agent</span>
+        <b>→</b>
+        <span>Intent Detection</span>
+        <b>→</b>
+        <span>Lead Capture</span>
+        <b>→</b>
+        <span>Google Sheets / CRM</span>
+      </div>
+
+      <br>
+
+      The system could answer common questions, identify buying
+      intent, collect contact details, and notify the business
+      when human follow-up is needed.
+
+      <br><br>
+
+      <strong>Let's talk</strong> and dive deeper into the problem
+      you want to automate.
+
+      <br><br>
+
+      <a
+        class="ask-cta"
+        href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+      >
+        Let's Talk →
+      </a>
+    `;
+  }
+
+
+  // =========================================
+  // APPOINTMENT AUTOMATION
+  // =========================================
+
+  if (
+    q.includes("appointment") ||
+    q.includes("booking") ||
+    q.includes("schedule")
+  ) {
+
+    return `
+      <strong>Yes.</strong> We could design an appointment inquiry
+      workflow that handles the initial conversation and routes
+      qualified requests to the right system or staff member.
+
+      <br><br>
+
+      <strong>Possible automation flow:</strong>
+
+      <div class="flow-preview">
+        <span>Customer</span>
+        <b>→</b>
+        <span>Chat</span>
+        <b>→</b>
+        <span>AI Assistant</span>
+        <b>→</b>
+        <span>Intent Detection</span>
+        <b>→</b>
+        <span>Appointment Request</span>
+        <b>→</b>
+        <span>Staff / Calendar</span>
+      </div>
+
+      <br>
+
+      The exact workflow would depend on the business,
+      scheduling system, availability rules, and how the team
+      wants appointments handled.
+
+      <br><br>
+
+      <strong>Let's talk</strong> and dive deeper into the problem
+      you want to automate.
+
+      <br><br>
+
+      <a
+        class="ask-cta"
+        href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+      >
+        Let's Talk →
+      </a>
+    `;
+  }
+
+
+  // =========================================
+  // GENERIC AUTOMATION
+  // =========================================
+
+  return `
+    <strong>Yes — this is the kind of problem we can explore
+    for automation.</strong>
+
+    <br><br>
+
+    A possible starting architecture could be:
+
+    <div class="flow-preview">
+      <span>Trigger</span>
+      <b>→</b>
+      <span>AI / Logic</span>
+      <b>→</b>
+      <span>Data Processing</span>
+      <b>→</b>
+      <span>Action</span>
+      <b>→</b>
+      <span>Notification / Output</span>
+    </div>
+
+    <br>
+
+    The actual workflow would depend on your current process,
+    tools, business rules, and the result you want to achieve.
+
+    <br><br>
+
+    <strong>Let's talk</strong> and dive deeper into the problem
+    you want to automate.
+
+    <br><br>
+
+    <a
+      class="ask-cta"
+      href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+    >
+      Let's Talk →
+    </a>
+  `;
+}
+
+
+function askAutoProv(question) {
+
+  question = question.trim();
+
+  if (!question) return;
+
+  addChatMessage("user", question);
+
+  const response = getAutoProvResponse(question);
+
+  setTimeout(() => {
+
+    addChatMessage("ai", response);
+
+  }, 350);
+
+  askInput.value = "";
+}
+
+
+// =========================================
+// ASK BUTTON
+// =========================================
+
+askButton.addEventListener("click", () => {
+
+  askAutoProv(askInput.value);
+
+});
+
+
+// =========================================
+// ENTER KEY
+// =========================================
+
+askInput.addEventListener("keydown", (event) => {
+
+  if (event.key === "Enter") {
+
+    askAutoProv(askInput.value);
+
+  }
+
+});
+
+
+// =========================================
+// EXAMPLE PROMPTS
+// =========================================
+
+promptButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const question = button.dataset.question;
+
+    askInput.value = question;
+
+    askAutoProv(question);
+
+  });
+
+});
