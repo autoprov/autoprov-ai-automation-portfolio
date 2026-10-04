@@ -130,18 +130,26 @@ function getAutoProvResponse(question) {
 
 
   // =========================================
-  // DENTAL / AI VIRTUAL ASSISTANT
+  // 1. DENTAL / AI RECEPTIONIST / LEAD LOGGER
   // =========================================
 
   if (
     q.includes("dental") ||
     q.includes("dentist") ||
+    q.includes("dental clinic") ||
+    q.includes("ai receptionist") ||
     (q.includes("virtual assistant") && q.includes("lead"))
   ) {
 
     return `
-      <strong>Yes.</strong> We could design an AI virtual assistant
-      and lead-logging workflow for a dental clinic.
+      <strong>Yes — this is a strong use case for AI automation.</strong>
+
+      <br><br>
+
+      For a dental clinic, AutoProv could design an AI virtual
+      assistant that handles initial patient inquiries, identifies
+      intent, collects lead information, and routes qualified
+      requests to the clinic team.
 
       <br><br>
 
@@ -165,9 +173,9 @@ function getAutoProvResponse(question) {
 
       <br>
 
-      The assistant could answer common questions, identify
-      appointment intent, collect patient details, qualify leads,
-      and automatically log the information for follow-up.
+      The assistant could answer common inquiries, identify
+      appointment intent, collect contact details, qualify the
+      inquiry, and automatically log the lead for follow-up.
 
       <br><br>
 
@@ -187,44 +195,49 @@ function getAutoProvResponse(question) {
 
 
   // =========================================
-  // MESSENGER / LEAD CAPTURE
+  // 2. REAL ESTATE LEAD QUALIFICATION
   // =========================================
 
   if (
-    q.includes("messenger") ||
-    q.includes("facebook") ||
-    q.includes("lead capture") ||
-    q.includes("lead")
+    q.includes("real estate") ||
+    q.includes("realtor") ||
+    q.includes("property") ||
+    q.includes("realty")
   ) {
 
     return `
-      <strong>Yes.</strong> We could build an automated lead
-      capture system that handles incoming Messenger conversations
-      and turns qualified inquiries into structured leads.
+      <strong>Absolutely — lead qualification is a great candidate
+      for automation in real estate.</strong>
+
+      <br><br>
+
+      AutoProv could design a system that receives inquiries,
+      asks qualifying questions, scores the lead, and sends the
+      right prospects to the sales team.
 
       <br><br>
 
       <strong>Possible automation flow:</strong>
 
       <div class="flow-preview">
-        <span>Customer Message</span>
+        <span>Prospect</span>
         <b>→</b>
-        <span>Messenger</span>
+        <span>Chat / Form</span>
         <b>→</b>
-        <span>AI Agent</span>
+        <span>AI Qualification</span>
         <b>→</b>
-        <span>Intent Detection</span>
+        <span>Lead Score</span>
         <b>→</b>
-        <span>Lead Capture</span>
+        <span>CRM</span>
         <b>→</b>
-        <span>Google Sheets / CRM</span>
+        <span>Sales Follow-up</span>
       </div>
 
       <br>
 
-      The system could answer common questions, identify buying
-      intent, collect contact details, and notify the business
-      when human follow-up is needed.
+      The workflow could capture budget, preferred property type,
+      location, timeline, and other qualifying information before
+      routing the lead to the appropriate sales process.
 
       <br><br>
 
@@ -244,19 +257,91 @@ function getAutoProvResponse(question) {
 
 
   // =========================================
-  // APPOINTMENT AUTOMATION
+  // 3. MESSENGER / CUSTOMER SUPPORT
+  // =========================================
+
+  if (
+    q.includes("messenger") ||
+    q.includes("facebook") ||
+    q.includes("customer support") ||
+    q.includes("chatbot") ||
+    q.includes("facebook inquiries")
+  ) {
+
+    return `
+      <strong>This can be turned into an automated customer
+      support workflow.</strong>
+
+      <br><br>
+
+      AutoProv could connect Messenger with an AI support agent
+      that understands incoming questions, uses business
+      knowledge, captures leads, and escalates conversations
+      when human assistance is needed.
+
+      <br><br>
+
+      <strong>Possible automation flow:</strong>
+
+      <div class="flow-preview">
+        <span>Customer</span>
+        <b>→</b>
+        <span>Messenger</span>
+        <b>→</b>
+        <span>AI Agent</span>
+        <b>→</b>
+        <span>Business Knowledge</span>
+        <b>→</b>
+        <span>Intent Detection</span>
+        <b>→</b>
+        <span>Lead Capture</span>
+        <b>→</b>
+        <span>Human Escalation</span>
+      </div>
+
+      <br>
+
+      This can help businesses respond faster while keeping
+      important conversations organized for follow-up.
+
+      <br><br>
+
+      <strong>Let's talk</strong> and dive deeper into the problem
+      you want to automate.
+
+      <br><br>
+
+      <a
+        class="ask-cta"
+        href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+      >
+        Let's Talk →
+      </a>
+    `;
+  }
+
+
+  // =========================================
+  // 4. APPOINTMENT / BOOKING AUTOMATION
   // =========================================
 
   if (
     q.includes("appointment") ||
     q.includes("booking") ||
-    q.includes("schedule")
+    q.includes("bookings") ||
+    q.includes("schedule") ||
+    q.includes("scheduling")
   ) {
 
     return `
-      <strong>Yes.</strong> We could design an appointment inquiry
-      workflow that handles the initial conversation and routes
-      qualified requests to the right system or staff member.
+      <strong>Yes — appointment inquiries can be streamlined
+      with an automated workflow.</strong>
+
+      <br><br>
+
+      Instead of manually handling every initial request,
+      an AI assistant could collect the information needed
+      before the request reaches the business team.
 
       <br><br>
 
@@ -273,14 +358,14 @@ function getAutoProvResponse(question) {
         <b>→</b>
         <span>Appointment Request</span>
         <b>→</b>
-        <span>Staff / Calendar</span>
+        <span>Calendar / Staff</span>
       </div>
 
       <br>
 
-      The exact workflow would depend on the business,
-      scheduling system, availability rules, and how the team
-      wants appointments handled.
+      The final workflow could be connected to the business's
+      scheduling system, availability rules, and notification
+      process.
 
       <br><br>
 
@@ -300,12 +385,75 @@ function getAutoProvResponse(question) {
 
 
   // =========================================
-  // GENERIC AUTOMATION
+  // 5. RECEIPT → INVENTORY AUTOMATION
+  // =========================================
+
+  if (
+    q.includes("receipt") ||
+    q.includes("inventory") ||
+    q.includes("stock") ||
+    q.includes("receiving") ||
+    q.includes("inventory update")
+  ) {
+
+    return `
+      <strong>Yes — this is a great candidate for document
+      processing and inventory automation.</strong>
+
+      <br><br>
+
+      AutoProv could design a workflow that reads receipt images,
+      extracts the important information using OCR and AI,
+      matches products, and updates inventory automatically.
+
+      <br><br>
+
+      <strong>Possible automation flow:</strong>
+
+      <div class="flow-preview">
+        <span>Receipt Image</span>
+        <b>→</b>
+        <span>OCR</span>
+        <b>→</b>
+        <span>AI Extraction</span>
+        <b>→</b>
+        <span>Product Matching</span>
+        <b>→</b>
+        <span>Inventory Update</span>
+        <b>→</b>
+        <span>Audit Log</span>
+      </div>
+
+      <br>
+
+      The workflow could also include duplicate protection,
+      approval steps, error handling, manual review for uncertain
+      matches, and inventory audit records.
+
+      <br><br>
+
+      <strong>Let's talk</strong> and dive deeper into the process
+      you want to automate.
+
+      <br><br>
+
+      <a
+        class="ask-cta"
+        href="mailto:autoprovph@gmail.com?subject=Automation%20Project%20Inquiry"
+      >
+        Let's Talk →
+      </a>
+    `;
+  }
+
+
+  // =========================================
+  // 6. GENERIC AUTOMATION
   // =========================================
 
   return `
-    <strong>Yes — this is the kind of problem we can explore
-    for automation.</strong>
+    <strong>That sounds like a process we can explore for
+    automation.</strong>
 
     <br><br>
 
@@ -343,7 +491,6 @@ function getAutoProvResponse(question) {
     </a>
   `;
 }
-
 
 function askAutoProv(question) {
 
